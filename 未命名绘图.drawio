@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="29.0.3">
+  <diagram name="第 1 页" id="MRox7EFYQnBD7X8Ke4iO">
+    <mxGraphModel dx="1042" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FcHRhhRqkPShN3BR3bkx-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FcHRhhRqkPShN3BR3bkx-2" target="FcHRhhRqkPShN3BR3bkx-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FcHRhhRqkPShN3BR3bkx-2" value="detections" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FcHRhhRqkPShN3BR3bkx-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FcHRhhRqkPShN3BR3bkx-3" target="FcHRhhRqkPShN3BR3bkx-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FcHRhhRqkPShN3BR3bkx-3" value="根据class_id分类" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FcHRhhRqkPShN3BR3bkx-5" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;div style=&quot;color: #d1d3db;background-color: #1a1b1d;font-family: &#39;JetBrains Mono&#39;, Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 13px;line-height: 22px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #b38cff;&quot;&gt;struct&lt;/span&gt; &lt;span style=&quot;color: #81cfe0;&quot;&gt;Detection&lt;/span&gt;&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #b38cff;&quot;&gt;int&lt;/span&gt; &lt;span style=&quot;color: #e0e3ee;&quot;&gt;class_id&lt;/span&gt;{&lt;span style=&quot;color: #f48cca;&quot;&gt;0&lt;/span&gt;};&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #81cfe0;&quot;&gt;std&lt;/span&gt;::string &lt;span style=&quot;color: #e0e3ee;&quot;&gt;className&lt;/span&gt;{};&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #b38cff;&quot;&gt;float&lt;/span&gt; &lt;span style=&quot;color: #e0e3ee;&quot;&gt;confidence&lt;/span&gt;{&lt;span style=&quot;color: #f48cca;&quot;&gt;0.0&lt;/span&gt;};&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #81cfe0;&quot;&gt;cv&lt;/span&gt;::Scalar &lt;span style=&quot;color: #e0e3ee;&quot;&gt;color&lt;/span&gt;{};&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;color: #81cfe0;&quot;&gt;cv&lt;/span&gt;::Rect &lt;span style=&quot;color: #e0e3ee;&quot;&gt;box&lt;/span&gt;{};&lt;/div&gt;&lt;div&gt;};&lt;/div&gt;&lt;/div&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="230" width="210" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="FcHRhhRqkPShN3BR3bkx-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FcHRhhRqkPShN3BR3bkx-6" target="FcHRhhRqkPShN3BR3bkx-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FcHRhhRqkPShN3BR3bkx-6" value="从分类结果找最近的&lt;br&gt;（x,y)" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FcHRhhRqkPShN3BR3bkx-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FcHRhhRqkPShN3BR3bkx-18" target="FcHRhhRqkPShN3BR3bkx-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FcHRhhRqkPShN3BR3bkx-18" value="曲线移动" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="550" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FcHRhhRqkPShN3BR3bkx-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FcHRhhRqkPShN3BR3bkx-21" target="FcHRhhRqkPShN3BR3bkx-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FcHRhhRqkPShN3BR3bkx-21" value="pid分段" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FcHRhhRqkPShN3BR3bkx-23" value="makcu贝塞尔" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
